@@ -3,9 +3,9 @@ from django.http import HttpResponse
 import datetime
 
 # Create your views here.
-def movies(request):
-    name = "Movies"
-    html = "<html><body><h2>Movie</h2></body></html>"
+def blog(request):
+    name = "Blog"
+    html = "<html><body><h2>Blog</h2></body></html>"
     return render(request, "index.html")
 
 def get_now(request):

@@ -1,5 +1,43 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-  background-color: #100C08,
+  background-color: #f5f5f5;
+}
+#div1{
+    background-color: #1b1b1b;
+    color: #f5f5f5;
+}
+
+#mainNav {
+    background-color: #f5f5f5;
+    color: #1b1b1b;
+}
+#div2 {
+    background-color: #f5f5f5;
+    color: #1b1b1b;
+}
+#blog {
+    background-color: #1b1b1b;
+    color: #f5f5f5;
+}
+#store {
+    background-color: #f5f5f5;
+    color: #1b1b1b;
+}
+#footer {
+    background-color: #1b1b1b;
+    color: #f5f5f5;
+}
+#below {
+    background-color: #f5f5f5;
+    color: #1b1b1b;
+}
+#about {
+    background-color: #1b1b1b;
+}
+#contact {
+    background-color: #1b1b1b;
+}
+#database {
+    color: #1b1b1b;
 }

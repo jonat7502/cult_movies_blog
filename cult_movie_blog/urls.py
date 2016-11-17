@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', account_views.cult_movies_blog),
     url(r'^now$', account_views.get_now)
+
 ]
