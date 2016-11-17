@@ -1,19 +1,30 @@
 {% extends "index.html" %}
 
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>database</title>
-</head>
-<body>
+
 <h1>Movies Database</h1>
-    <ul>
-    <li></li>
-    </ul>
+<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Running Time</th>
+                <th>Director</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for movie in movies %}
+                <tr>
+                    <td><img height="100" width="100" src="/media/{{ product.image }}"></td>
+                    <td>{{ movie.title }}</td>
+                    <td>{{ movie.genre }}</td>
+                    <td>${{ movie.running_time }}</td>
+                    <td>{{ product.director }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 
 {% endblock %}
-</body>
-</html>

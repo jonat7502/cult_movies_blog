@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from accounts import views as account_views
+from movies import views as movie_views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', account_views.cult_movies_blog),
-    url(r'^now$', account_views.get_now)
+    url(r'^now$', account_views.get_now),
+    url(r'^database/$', movie_views.database, name='database')
 
 ]
