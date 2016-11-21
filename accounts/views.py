@@ -70,9 +70,9 @@ def register(request):
 def cult_movies_blog(request):
     name = "Cult Movies Blog"
     html = "<html><body><h1>Cult Movies Blog</h1></body></html>"
-    return render(request, "index.html")
+    return render(request, "base.html")
 
 def get_now(request):
     now = datetime.datetime.now()
-    return render(request, "index.html", {"current_date": now})
+    return render(request, "base.html", {"current_date": now})
 

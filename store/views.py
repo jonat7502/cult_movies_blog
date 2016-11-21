@@ -1,13 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import datetime
+from django.shortcuts import render
+
+from .models import Product
 
 # Create your views here.
 def store(request):
-    name = "Store"
-    html = "<html><body><h2>Store</h2></body></html>"
-    return render(request, "index.html")
+    return render(request, "base.html")
 
 def get_now(request):
     now = datetime.datetime.now()
-    return render(request, "index.html", {"current_date": now})
+    return render(request, "base.html", {"current_date": now})
+
+
+
+def all_products(request):
+    products = Product.objects.all()
+    return render(request, "products.html", {"products": products})

@@ -1,5 +1,5 @@
 
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from django.utils import timezone
 from .models import Post
 from .forms import BlogPostForm
@@ -57,10 +57,8 @@ def edit_post(request, id):
 
 
 def blog(request):
-    name = "Blog"
-    html = "<html><body><h2>Blog</h2></body></html>"
-    return render(request, "index.html")
+    return render(request, "base.html")
 
 def get_now(request):
     now = datetime.datetime.now()
-    return render(request, "index.html", {"current_date": now})
+    return render(request, "base.html", {"current_date": now})

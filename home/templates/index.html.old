@@ -15,11 +15,11 @@
 
 
     <!-- Theme CSS -->
-    <link href="{% static 'css/freelancer.css'%}" rel="stylesheet">
-    <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    <link href="{% static 'css/freelancer.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -61,6 +61,9 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
+              <ul class="nav nav-pills pull-right">
+    <li><a href="/products/">Products</a></li>
+</ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -86,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center" id="database">
-                    <a href="/database/"><h2 class="data">Movies Database</h2></a>
+                    <a href="{% url 'movies' %}"><h2 class="data">Movies Database</h2></a>
                     </div>
             </div>
             <div class="row">
@@ -151,7 +154,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center" id="blogtext">
-                    <a href="blog.html"><h2 class="white">The Blog</h2></a>
+                    <a href="../../blog/templates/blog.html"><h2 class="white">The Blog</h2></a>
                     </div>
             </div>
             <div class="row">

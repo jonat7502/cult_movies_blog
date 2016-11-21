@@ -13,16 +13,26 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
-from accounts import views as account_views
-from movies import views as movie_views
+from accounts import urls as accounts_urls
+from movies import urls as movie_urls
+from paypal.standard.ipn import urls as paypal_urls
+from paypal_store import views as paypal_views
+from store import views as store_views
+from home.views import get_index
+from blog import urls as blog_urls
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', account_views.cult_movies_blog),
-    url(r'^now$', account_views.get_now),
-    url(r'^database/$', movie_views.database, name='database')
+    url(r'^$', get_index, name='index'),
+    url(r'^movies/', include(movie_urls)),
+    url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
+    url(r'^paypal-return/$', paypal_views.paypal_return),
+    url(r'^paypal-cancel/$', paypal_views.paypal_cancel),
+    url(r'^products/$', store_views.all_products),
+    url(r'', include(accounts_urls)),
+    url(r'^blog/', include(blog_urls)),
 
 ]
