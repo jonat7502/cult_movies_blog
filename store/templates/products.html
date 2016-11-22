@@ -4,6 +4,7 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Image</th>
                 <th>Description</th>
                 <th>Price</th>
                 <th>Purchase</th>
@@ -13,6 +14,7 @@
             {% for product in products %}
                 <tr>
                     <td>{{ product.name }}</td>
+                    <td><img src=" /media/{{product.image}}"></td>
                     <td>{{ product.description }}</td>
                     <td>${{ product.price }}</td>
                     <td>{{ product.paypal_form.sandbox }}</td>

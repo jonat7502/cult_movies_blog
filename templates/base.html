@@ -59,7 +59,6 @@
 </head>
 
 <body id="page-top" class="index">
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
@@ -74,13 +73,14 @@
                         <a href="{% url 'index' %}" > Home </a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">Movies</a>
+                        <a href="{% url 'movies'%}">Movies</a>
                     </li>
                     <li class="page-scroll">
                         <a href="{% url 'blog' %}"> Blog </a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#">Store</a>
+                        <li class="page-scroll">
+                        <a href="{% url 'product' %}">Store</a>
+
                     </li>
                     {%  if user.is_authenticated %}
                      <li class="page-scroll">
@@ -104,6 +104,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
     {% block content %}>
     {% endblock %}
 

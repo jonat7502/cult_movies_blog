@@ -16,11 +16,10 @@
         <tbody>
             {% for movie in movies %}
                 <tr>
-                    <td><img height="100" width="100" src="/media/{{ product.image }}"></td>
                     <td>{{ movie.title }}</td>
                     <td>{{ movie.genre }}</td>
-                    <td>${{ movie.running_time }}</td>
-                    <td>{{ product.director }}</td>
+                    <td>{{ movie.running_time }}</td>
+                    <td>{{ movie.director }}</td>
                 </tr>
             {% endfor %}
         </tbody>

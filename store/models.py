@@ -7,6 +7,7 @@ from paypal.standard.forms import PayPalPaymentsForm
 # Create your models here.
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
+    image = models.ImageField(upload_to="images", blank="True", null="True")
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
 

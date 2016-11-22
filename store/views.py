@@ -15,6 +15,6 @@ def get_now(request):
 
 
 
-def all_products(request):
+def product(request):
     products = Product.objects.all()
     return render(request, "products.html", {"products": products})

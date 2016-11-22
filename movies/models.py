@@ -7,8 +7,8 @@ from django.db import models
 class Movie(models.Model):
     title = models.CharField(max_length=255)
     genre = models.CharField(max_length=255)
-    director = models.CharField(max_length=255)
     running_time = models.CharField(max_length=20)
+    director = models.CharField(max_length=255)
 
 
     def __unicode__(self):

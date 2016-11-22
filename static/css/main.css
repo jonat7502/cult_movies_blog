@@ -1,60 +1,64 @@
 .page-scroll:link {
     color: white;
-    background-color: #1b1b1b;
+    background-color: black;
 }
 .page-scroll:hover {
 
 }
 .page-scroll {
     color: white;
-    background-color: #1b1b1b;
+    background-color: black;
 
 
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   background-color: white;
+  padding-top: 100px;
 }
 #div1{
-    background-color: #1b1b1b;
+    background-color: black;
     color: white;
+
+
 }
 
 #mainNav {
     background-color: white;
-    color: #1b1b1b;
-    display: inline-block;
+    color: black;
     align-items: center;
+
 }
 #div2 {
     background-color: white;
-    color: #1b1b1b;
+    color: black;
 }
 #store {
 
     background-color: white;
-    color: #1b1b1b
+    color: black;
 
 }
 
 #footer {
-    background-color: #1b1b1b;
+    background-color: black;
     color: white;
 }
 #below {
     background-color: white;
-    color: #1b1b1b;
+    color: black;
 }
 
 .page-scroll:hover{
     display: inline-block;
     color: white;
-    background-color: #1b1b1b;
+    background-color: black;
 }
 #database {
-    color: #1b1b1b;
+    color: black;
 }
 
 a.effect1 {
@@ -98,5 +102,12 @@ a.effect1:hover:before {
  top: 0;
 }
 a.effect1:hover:after {
-    color: #1b1b1b;
+    color: black;
+}
+#ticket {
+    align-items: center;
+    float: right;
+}
+header img {
+    display: inline-block;
 }
