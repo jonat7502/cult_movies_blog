@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'blog',
     'store',
     'django_forms_bootstrap',
-    'django_gravatar'
+    'django_gravatar',
+    'paypal_store'
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },

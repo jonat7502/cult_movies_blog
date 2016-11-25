@@ -22,14 +22,12 @@ body {
 #div1{
     background-color: black;
     color: white;
-
-
 }
 
 #mainNav {
     background-color: white;
     color: black;
-    align-items: center;
+    display: inline-block;
 
 }
 #div2 {
@@ -110,4 +108,10 @@ a.effect1:hover:after {
 }
 header img {
     display: inline-block;
+}
+.data {
+    color: white;
+}
+#blog {
+    color: white;
 }

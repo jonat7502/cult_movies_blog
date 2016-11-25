@@ -33,11 +33,10 @@ urlpatterns = [
     url(r'^$', get_index, name='index'),
     url(r'^movies/', include(movie_urls)),
     url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
-    url(r'^paypal-return/$', paypal_views.paypal_return),
-    url(r'^paypal-cancel/$', paypal_views.paypal_cancel),
+    url(r'^paypal-return', paypal_views.paypal_return),
+    url(r'^paypal-cancel', paypal_views.paypal_cancel),
     url(r'^products/$', store_views.product, name='product'),
     url(r'', include(accounts_urls)),
     url(r'^blog/', include(blog_urls)),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
-
 ]

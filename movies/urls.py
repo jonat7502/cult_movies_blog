@@ -18,4 +18,5 @@ from views import movies
 
 urlpatterns = [
     url(r'^$', movies, name='movies'),
+    url(r'^$', movies, name='movies_database')
 ]

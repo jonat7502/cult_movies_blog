@@ -44,10 +44,10 @@
     .white {
         color: #f5f5f5;
     }
-    #store:hover {
-    color: #f5f5f5;
-    background-color: #1b1b1b;
-}
+{#    #store:hover {#}
+{#    color: #f5f5f5;#}
+{#    background-color: #1b1b1b;#}
+{#}#}
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -60,27 +60,18 @@
 
 <body id="page-top" class="index">
     <!-- Navigation -->
+
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
                         <a href="{% url 'index' %}" > Home </a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{% url 'movies'%}">Movies</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{% url 'blog' %}"> Blog </a>
-                    </li>
-                        <li class="page-scroll">
-                        <a href="{% url 'product' %}">Store</a>
-
                     </li>
                     {%  if user.is_authenticated %}
                      <li class="page-scroll">
@@ -108,30 +99,7 @@
     {% block content %}>
     {% endblock %}
 
-    <img alt="" style="width: 175px; height: 174px; margin-top: 0px; margin-left: 0px;"
-     class="" src="https://tse4.mm.bing.net/th?id=OIP.Md29bd63652f3493c978758e8e2cf66deH0
-&amp;pid=15.1&amp;P=0&amp;w=175&amp;h=174" id="yui_3_5_1_1_1479473157297_1371">
 
-
-    <img alt="" style="width: 319px; height: 178px; margin-top: 0px;
-    margin-left: 0px;" class="" src="https://tse4.mm.bing.net/th?id=OIP.M9da51c5070cdd7edc1452f21cd837710H0&amp;
-    pid=15.1&amp;P=0&amp;w=319&amp;h=178" id="yui_3_5_1_1_1479473253983_1554">
-
-    <img alt="" style="width: 172.5px; height: 172.5px; margin-top: 0px; margin-left: 0px;"
-         class="" src="https://tse4.mm.bing.net/th?id=OIP.M91431bcf688a7c022374245e94ed73a9H0
-&amp;pid=15.1&amp;P=0amp;w=300&amp;h=300" id="yui_3_5_1_1_1479478087725_722">
-
-    <img alt="" style="width: 172.5px; height: 172.5px; margin-top: 0px; margin-left: 0px;"
-         class="" src="https://tse4.mm.bing.net/th?id=OIP.M91431bcf688a7c022374245e94ed73a9H0
-&amp;pid=15.1&amp;P=0amp;w=300&amp;h=300" id="yui_3_5_1_1_1479478087725_722">
-
-    <img alt="" style="width: 319px; height: 178px; margin-top: 0px;
-    margin-left: 0px;" class="" src="https://tse4.mm.bing.net/th?id=OIP.M9da51c5070cdd7edc1452f21cd837710H0&amp;
-    pid=15.1&amp;P=0&amp;w=319&amp;h=178" id="yui_3_5_1_1_1479473253983_1554">
-
-   <img alt="" style="width: 175px; height: 174px; margin-top: 0px; margin-left: 0px;"
-     class="" src="https://tse4.mm.bing.net/th?id=OIP.Md29bd63652f3493c978758e8e2cf66deH0
-&amp;pid=15.1&amp;P=0&amp;w=175&amp;h=174" id="yui_3_5_1_1_1479473157297_1371">
 
 
 
